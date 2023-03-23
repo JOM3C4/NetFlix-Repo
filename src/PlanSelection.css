@@ -1,0 +1,145 @@
+table {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background-color: #222;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #fff;
+    border: none;
+    color: #222;
+    font-size: 20px;
+    padding: 30px;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+tr:nth-child(even) td {
+    background-color: #f5f5f5;
+}
+
+td.selected {
+    background-color: #e50914;
+    color: #fff;
+}
+
+td.selected:hover {
+    background-color: #e50914;
+    cursor: pointer;
+}
+
+button {
+    background-color: #e50914;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 60px;
+    padding: 20px 60px;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+}
+
+button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+button:hover {
+    background-color: #b30000;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+ul {
+    margin-bottom: 60px;
+}
+
+li {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-top: 20px;
+}
+
+/* Styles for different plan options */
+
+td[data-plan="Básico con Anuncios"] {
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+td[data-plan="Estándar"] {
+    background-color: #ffd700;
+    color: #222;
+}
+
+td[data-plan="Premium"] {
+    background-color: #222;
+    color: #fff;
+}
+
+/* Media queries for responsive design */
+
+@media only screen and (max-width: 768px) {
+    table {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    th {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    td {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    td.selected {
+        padding: 20px;
+    }
+
+    button {
+        padding: 16px 40px;
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    h2 {
+        font-size: 28px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    li {
+        font-size: 20px;
+        margin-top: 16px;
+    }
+}
