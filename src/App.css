@@ -1,22 +1,26 @@
 /* Estilos generales */
 
-  {
+*{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 }
-
+nav{
+  padding-top: 30px;
+}
+nav ul li:hover{
+  color: red;
+}
 /* Header */
 header {
   background-color: #000;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
 }
 
 header img {
@@ -41,10 +45,10 @@ header nav ul li {
   font-size: 24px;
   padding: 50px;
   text-align: center;
-  background-image: url('https://wallpaperaccess.com/full/1618726.jpg');
+  background-image: url('./img/2915038.jpg');
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
